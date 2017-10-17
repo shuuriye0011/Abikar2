@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    android:padding="10dp"
+    tools:context="com.example.android.abikar.sms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:fontFamily="serif-monospace"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="SMS SENDER" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send To"
+            android:textColor="#000"
+            android:textSize="15dp"
+            />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mess"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignStart="@+id/mess"
+
+            android:ems="10"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Message" />
+
+        <EditText
+            android:id="@+id/mess"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:hint="Message"
+            android:layout_alignParentStart="true"
+
+android:gravity="top|left"
+            android:ems="10"
+            android:inputType="textMultiLine"
+    />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/phone"
+
+            android:layout_alignRight="@+id/phone"
+            android:layout_below="@+id/phone"
+
+            android:layout_marginTop="10dp"
+            android:text="Send"
+            android:drawableRight="@drawable/ic_action_name"
+            tools:layout_editor_absoluteX="187dp"
+            tools:layout_editor_absoluteY="176dp" />
+    </LinearLayout>
+
+</RelativeLayout>
